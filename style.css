@@ -1,0 +1,234 @@
+/* General */
+:root {
+  --primary-color1: white;
+  --primary-color2: #476a6f;
+  --background-color: #e7e8d9;
+  --highlighting-color: #93c8ba;
+  --password-valid: #6ffeb2;
+  --password-invalid: #ff9b9b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+  .dark-mode {
+    --primary-color1: white;
+    --primary-color2: #7180b9;
+    --background-color: #2f3960;
+    --highlighting-color: #171738;
+    --password-valid: #171738;
+    --password-invalid: #fff704;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--primary-color2);
+  height: 100px;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.logo img {
+  width: 200px;
+  margin-left: 50px;
+}
+
+/* Navigace */
+nav {
+  margin-right: 30px;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--primary-color1);
+}
+
+.menu-icon {
+  display: none;
+  margin-right: 30px;
+}
+
+/* Welcome section */
+.welcome {
+  text-align: center;
+  width: 70%;
+  margin: 50px auto;
+}
+
+.foreword {
+  margin: 50px 0;
+  color: var(--primary-color2);
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.welcome img {
+  width: 200px;
+  margin: 10px;
+  transition: all 0.5s linear;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.image-alignment {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-button {
+  padding: 10px;
+  margin: 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--primary-color2);
+}
+
+.service-button a {
+  text-decoration: none;
+  color: var(--primary-color1);
+}
+
+/* Form section */
+.email-form {
+  background-color: var(--primary-color2);
+}
+
+.email-form article {
+  color: var(--primary-color1);
+  padding: 50px 0;
+  margin-top: 40px;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.column-form {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+}
+
+h2 {
+  font-weight: bold;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+.point {
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.bold {
+  color: var(--highlighting-color);
+  font-weight: bold;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-box .email {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 50px;
+}
+
+.input-box .password {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 50px;
+}
+
+.input-box .password-repeat {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 50px;
+}
+
+.confirm {
+  padding: 10px;
+  margin: 20px;
+  width: 100px;
+  object-position: center;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--highlighting-color);
+  color: var(--primary-color2);
+}
+
+/* Pro JavaScript */
+.valid {
+  color: var(--password-valid);
+}
+
+.invalid {
+  color: var(--password-invalid);
+}
+
+/* Footer */
+footer {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+  color: var(--primary-color2);
+}
+
+.theme-toggle {
+  padding: 10px;
+  margin: 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--primary-color2);
+  color: var(--primary-color1);
+}
+
+.top-page {
+  text-decoration: none;
+  background: var(--primary-color2);
+  padding: 10px;
+  color: var(--primary-color1);
+  border-radius: 50px;
+  font-size: 10px;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  display: none;
+}
